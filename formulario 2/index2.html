@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denuncia ART</title>
+
+    <!-- CONEXION CSS -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>PREVENCIÓN ART</h1>
+        <h2>Informe de Accidente de Trabajo o Enfermedad Profesional</h2>
+
+        <!-- DATOS DEL TRABAJADOR -->
+
+        <section class="card">
+
+            <h3>Datos del Trabajador</h3>
+
+            <div class="grid">
+
+                <div>
+                    <label>Apellido y Nombre</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>CUIL</label>
+                    <input type="text">
+                </div>
+
+                <div class="full">
+                    <label>Domicilio</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Estado Civil</label>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>Soltero</option>
+                        <option>Casado</option>
+                        <option>Viudo</option>
+                        <option>Divorciado</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Sexo</label>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Nacionalidad</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Provincia</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Localidad</label>
+                    <input type="text">
+                </div>
+
+                <div class="full">
+                    <label>Puesto de Trabajo</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EMPLEADOR -->
+
+        <section class="card">
+
+            <h3>Datos del Empleador</h3>
+
+            <div class="grid">
+
+                <div>
+                    <label>Nombre de la Empresa</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>CUIT</label>
+                    <input type="text">
+                </div>
+
+                <div class="full">
+                    <label>Domicilio</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Contrato N°</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Provincia</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Localidad</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- INFORMACION DEL SINIESTRO -->
+
+        <section class="card">
+
+            <h3>Información del Siniestro</h3>
+
+            <div class="grid">
+
+                <div>
+                    <label>Fecha del Accidente</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Hora del Accidente</label>
+                    <input type="time">
+                </div>
+
+                <div>
+                    <label>Tipo</label>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>Accidente de Trabajo</option>
+                        <option>Enfermedad Profesional</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Actividad Habitual?</label>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </div>
+
+                <div class="full">
+                    <label>Descripción del Accidente</label>
+                    <textarea rows="6"></textarea>
+                </div>
+
+                <div>
+                    <label>Zona del cuerpo afectada</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Naturaleza de la lesión</label>
+                    <input type="text">
+                </div>
+
+                <div class="full">
+                    <label>Diagnóstico</label>
+                    <textarea rows="4"></textarea>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FIRMA -->
+
+        <section class="card">
+
+            <h3>Firma</h3>
+
+            <div class="grid">
+
+                <div>
+                    <label>Firma del denunciante</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>DNI</label>
+                    <input type="text">
+                </div>
+
+                <div class="full">
+                    <label>Aclaración</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BOTON -->
+
+        <div class="btn-container">
+            <button>Enviar Denuncia</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

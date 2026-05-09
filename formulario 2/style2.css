@@ -1,0 +1,158 @@
+/* ===== RESET ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    padding: 30px;
+    color: #1e293b;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== TITULOS ===== */
+
+h1{
+    text-align: center;
+    color: #0f172a;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 35px;
+    font-size: 22px;
+}
+
+/* ===== CARDS ===== */
+
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 7px solid #2563eb;
+}
+
+/* ===== SUBTITULOS ===== */
+
+h3{
+    margin-bottom: 20px;
+    color: #1d4ed8;
+    font-size: 22px;
+}
+
+/* ===== GRID ===== */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.full{
+    grid-column: 1 / 3;
+}
+
+/* ===== LABEL ===== */
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* ===== INPUTS ===== */
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* ===== FOCUS ===== */
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 10px rgba(37,99,235,0.2);
+}
+
+/* ===== TEXTAREA ===== */
+
+textarea{
+    resize: vertical;
+}
+
+/* ===== BOTON ===== */
+
+.btn-container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+button{
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+button:hover{
+    transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .full{
+        grid-column: auto;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
