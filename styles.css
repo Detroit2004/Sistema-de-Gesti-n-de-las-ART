@@ -1,0 +1,37 @@
+body {
+    text-align:center;
+}
+
+h1 {
+    color: #4d2906;
+    font-size: 36px;
+};
+
+div .contenedor-principal {
+    background: #1c1e86;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+    height: 300px;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+}
+
+.boton {
+    background-color: #6b43ed;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.boton:hover {
+    background-color: #2c0f6b;
+
+}
