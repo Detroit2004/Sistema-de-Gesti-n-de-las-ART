@@ -1,37 +1,103 @@
+/* ESTILOS DEL index.html*/
 body {
-    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ,Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333333;
 }
 
-h1 {
-    color: #4d2906;
-    font-size: 36px;
-};
-
-div .contenedor-principal {
-    background: #1c1e86;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 50%;
-    height: 300px;
+/* Navegación / Header */
+.botones-usuario {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-img {
-    max-width: 500px;
-    height: auto;
+.botones-usuario nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* ESPACIADO ENTRE LOS BOTONES*/
+    flex-wrap: wrap; /* ADAPTAR LA PANTALLA A CELULARES */
 }
 
+/* Botones */
 .boton {
     background-color: #6b43ed;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    padding: 12px 24px;
+    text-decoration: none; /* QUITAMOS EL SUBRAYADO DE LOS ENLACES */
     border-radius: 5px;
-    cursor: pointer;
-    margin: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
 }
 
 .boton:hover {
     background-color: #2c0f6b;
+    transform: translateY(-2px); /* EFECTO DE LEVANTE DEL BOTÓN */
+}
 
+/* CONTENEDOR PRINCIPAL */
+.contenido-principal {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* TÍTULOS */
+h1 {
+    color: #81210b;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #81210b;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* CONTROL DE LA IMAGEN DEL LOGO */
+.logo-wrapper {
+    margin: 20px auto;
+}
+
+.logo {
+    width: 100%;
+    max-width: 180px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedor-inicio {
+    background-color: #5b91f4;
+    color: white; 
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contenedor-inicio h1 {
+    color: #ffffff; 
+}
+
+.contenedor-info {
+    background-color: #ede8e8;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.6; /* PONEMOS UN INTERLINEADO ADECUADO */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: justify; /* JUSTIFICAMOS EL TEXTO, LO CENTRAMOS */
+}
+
+.contenedor-info h2 {
+    text-align: center;
 }
